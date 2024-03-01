@@ -8,6 +8,7 @@ package rocks.zipcode;
  */
 public class PayDay {
     public static void main(String[] args) {
+        // Finished
         PayDay payday = new PayDay();
 
         StringBuilder outputReport = new StringBuilder();
