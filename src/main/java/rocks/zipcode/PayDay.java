@@ -43,7 +43,10 @@ public class PayDay {
      * @return a string of the form "Kris 215.00 10.75 204.25”
      */
     public String pay(String n, double rate, double worked, double deduct) {
-        return null;
+        double gp = rate * worked;
+        double deduction = gp * deduct;
+        double netPay = gp - deduction;
+        return String.format("%s %.2f %.2f %.2f", n, gp, deduction, netPay);
     }
 
 
@@ -51,6 +54,7 @@ public class PayDay {
      * for the example of how the *pay* method might be used to create a text report
      *
      */
+
     private class TimeCard {
         private String name;
         private double hoursWorked;
